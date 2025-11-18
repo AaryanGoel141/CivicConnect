@@ -1,0 +1,380 @@
+🏛️ CivicConnect — AI-Powered Civic Engagement Platform
+
+Report Issues. Discover Schemes. Stay Informed.
+All in one unified, citizen-first platform.
+
+CivicConnect is a modern, AI-enhanced civic engagement platform designed to help citizens connect with their local government effortlessly.
+It allows users to report civic issues, get AI-based categorization, receive government scheme recommendations, and stay updated with local news — all in a clean, intuitive interface inspired by Twitter + Reddit + Govt Dashboards.
+
+🚀 Vision
+
+Millions of civic issues are reported late, ignored, or lost due to:
+
+Bureaucratic complexity
+
+Lack of awareness
+
+No simple reporting channel
+
+Zero feedback loops
+
+Citizens not knowing govt schemes
+
+No real-time civic news updates
+
+CivicConnect solves this.
+
+It gives a voice to citizens, data to authorities, and knowledge to everyone.
+
+It is built to empower:
+✔ Students
+✔ Common citizens
+✔ Senior citizens
+✔ Activists
+✔ Local communities
+✔ Smart city planners
+
+🔥 Key Features
+🧠 AI Complaint Categorization
+
+Users just type the issue.
+Our ML model predicts:
+
+Roads
+
+Water
+
+Electricity
+
+Sanitation
+
+Corruption
+
+Public Safety
+… and more.
+
+(Trained on Indian civic dataset using TF-IDF + Logistic Regression)
+
+🏷️ Smart Issue Reporting
+
+Post civic complaints easily
+
+Add photos & location
+
+Auto-tagged by AI
+
+Shown in community feed
+
+💬 Community Feed (Twitter + Reddit style)
+
+Upvote issues
+
+Comment
+
+Discuss
+
+Share
+
+Filter by:
+
+Latest
+
+Trending
+
+Near you
+
+🏆 Civic Engagement Gamification
+
+Earn points for participating
+
+Unlock badges
+
+Become a community leader
+
+🏛️ Government Scheme Finder
+
+Find schemes based on:
+
+Age
+
+Income
+
+Occupation
+
+Category
+
+Suggested automatically:
+
+“Pradhan Mantri Awas Yojana might apply to you.”
+“Scholarship scheme available in your state.”
+
+📰 Live Civic News Feed
+
+Using public news APIs (GNews / NewsAPI):
+
+Water crisis alerts
+
+Road safety incidents
+
+Garbage collection issues
+
+Local governance updates
+
+Optional: auto-filter by location!
+
+🏗️ Architecture Overview
+Frontend (Next.js + Tailwind + shadcn/ui)
+        |
+API Routes (Next.js App Router)
+        |
+MongoDB Atlas (Cloud Database)
+        |
+Python FastAPI ML Server (Deployed on Render)
+
+🛠️ Tech Stack
+Frontend
+
+Next.js 15
+
+React 19
+
+Tailwind CSS
+
+shadcn/ui
+
+Framer Motion
+
+Fully responsive
+
+PWA-ready
+
+Backend
+
+Next.js API Routes
+
+MongoDB Atlas
+
+Mongoose
+
+NextAuth.js (Credentials)
+
+Machine Learning
+
+Python
+
+Scikit-learn
+
+TF-IDF Vectorizer
+
+Logistic Regression
+
+Label Encoding
+
+AI Integration
+
+ML API predicts:
+
+input: "There’s a pothole near MG Road"
+output: "Roads"
+
+News Integration
+
+GNews API
+
+Location-based filtering
+
+Civic-issue keyword filters
+
+Deployment
+
+Vercel (Frontend)
+
+Render / Railway (ML API)
+
+MongoDB Atlas (DB)
+
+📊 Machine Learning Model
+
+Trained on real Indian civic complaint data
+
+Preprocessed using:
+
+text normalization
+
+stopword removal
+
+TF-IDF features
+
+Model: Logistic Regression
+
+Accuracy: 87–89%
+
+Categories:
+
+Roads
+
+Water Supply
+
+Street Lights
+
+Waste
+
+Corruption
+
+Public Works etc.
+
+Model file:
+
+complaint_classifier.pkl
+
+📦 Features Completed
+
+✔ Sticky Tweet-like issue composer
+✔ ML-backed category detection
+✔ MongoDB Atlas cloud DB
+✔ Auth system with NextAuth.js
+✔ Trending issues sidebar
+✔ Community feed
+✔ Schemes recommendation widget
+✔ News feed integration
+✔ Fully responsive layout
+✔ Dark mode ready
+✔ PWA compatible design
+
+🔜 Upcoming Features
+
+Admin dashboard for officers
+
+WhatsApp reporting
+
+Region heatmaps
+
+Voice input
+
+OCR for scanned complaints
+
+🧩 Folder Structure
+/app
+  /home
+  /community
+  /report
+  /schemes
+  /profile
+  /api
+    /auth
+    /posts
+    /predict
+    /news
+/lib
+  db.ts
+/models
+  User.ts
+  Post.ts
+  Comment.ts
+  Scheme.ts
+/ml-backend
+  classifier.py
+  main.py (FastAPI)
+
+💡 Why CivicConnect Matters
+The Problem Today:
+
+Most civic issues suffer from:
+
+Delay in reporting
+
+No transparency
+
+No public visibility
+
+No incentive to report
+
+No awareness of schemes
+
+No digital simplicity
+
+With CivicConnect:
+
+Anyone can report in seconds
+
+Social upvotes create pressure
+
+ML routes complaints smartly
+
+Data builds accountability
+
+Citizens feel empowered
+
+Govt discovers patterns
+
+🏅 Impact & Potential
+
+✔ Helps Smart Cities & Digital India missions
+✔ Bridges communication gap
+✔ Helps vulnerable citizens (elderly, disabled, rural)
+✔ Encourages civic engagement culture
+✔ Makes governments more responsive
+✔ Reduces corruption
+✔ Increases transparency
+✔ Enables better policy decisions through data
+
+🧑‍💻 Team & Roles
+
+Utkarsh Chauhan
+
+Frontend & UX
+
+Product vision
+
+PWA & Design
+
+Data mapping & DB design
+
+Teammate (Backend/ML)
+
+Python ML model
+
+API integration
+
+Cloud Deployment
+
+(Adjust names as needed)
+
+📌 How to Run Locally
+git clone https://github.com/YOUR-USERNAME/civicconnect.git
+cd civicconnect
+npm install
+npm run dev
+
+
+Environment variables required:
+
+MONGODB_URI=
+NEWS_API_KEY=
+NEXTAUTH_SECRET=
+ML_API_URL=http://localhost:8000/predict
+
+📄 License
+
+MIT License
+
+❤️ Acknowledgements
+
+Government of India Open Data
+
+MongoDB Atlas Student Program
+
+GNews API
+
+scikit-learn
+
+Next.js community
+
+⭐ If you like this project
+
+Give it a star
+Share it
+Fork it
+Or contribute!
+
+Together we can build better civic systems 🚀
